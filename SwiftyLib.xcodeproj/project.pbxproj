@@ -17,6 +17,7 @@
 		BC2A3F0D2314FF75001D8284 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2A3F0B2314FF75001D8284 /* LaunchScreen.storyboard */; };
 		BC2A3F182314FF76001D8284 /* SwiftyLibExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A3F172314FF76001D8284 /* SwiftyLibExamplesTests.swift */; };
 		BC2A3F232314FF76001D8284 /* SwiftyLibExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A3F222314FF76001D8284 /* SwiftyLibExamplesUITests.swift */; };
+		BC2A3F2F2315047C001D8284 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A3F2E2315047C001D8284 /* SwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		BC2A3F1E2314FF76001D8284 /* SwiftyLibExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyLibExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2A3F222314FF76001D8284 /* SwiftyLibExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLibExamplesUITests.swift; sourceTree = "<group>"; };
 		BC2A3F242314FF76001D8284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC2A3F2E2315047C001D8284 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				BC2A3EE52314FAB4001D8284 /* SwiftyLib.h */,
 				BC2A3EE62314FAB4001D8284 /* Info.plist */,
+				BC2A3F2E2315047C001D8284 /* SwiftyLib.swift */,
 			);
 			path = SwiftyLib;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				TargetAttributes = {
 					BC2A3EE12314FAB4001D8284 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					BC2A3EEA2314FAB5001D8284 = {
 						CreatedOnToolsVersion = 10.0;
@@ -378,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2A3F2F2315047C001D8284 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +584,7 @@
 		BC2A3EF72314FAB5001D8284 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -595,6 +601,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Wanglee.SwiftyLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -603,6 +610,7 @@
 		BC2A3EF82314FAB5001D8284 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -627,6 +635,7 @@
 		BC2A3EFA2314FAB5001D8284 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -644,6 +653,7 @@
 		BC2A3EFB2314FAB5001D8284 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
